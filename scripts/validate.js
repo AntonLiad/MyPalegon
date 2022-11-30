@@ -1,6 +1,6 @@
-const form = document.querySelector('.form');
-const formInput = form.querySelector('.form__input');
-// console.log(formInput.id);
+// const form = document.querySelector('.form');
+// const formInput = form.querySelector('.form__input');
+// console.log(formInput.id); это больше не нужно... 
 
 // включить проверку
 const enableValidation = () => {
