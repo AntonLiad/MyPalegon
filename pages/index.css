@@ -2,18 +2,22 @@
 
 @import url('../vendor/fonts/fonts.css');
 
+.body {
+    background-color: rgba(0, 0, 0, .1);
+}
 
 .page {
     width: 320px;
     min-height: 200px;
     margin: auto;
+    background-color: #fff;
 }
 
 
 .header__title {
     font-family: 'Inter', Arial, sans-serif;
     color: #fff;
-    margin: 0 0 0 25px;
+    margin: 0 0 0 15px;
     font-size: 28px;
 }
 
@@ -119,14 +123,16 @@
     border: none;
     width: 19px;
     height: 19px;
-    position: absolute;
-    top: 170px;
-    right: 15px;
     cursor: pointer;
+    position: absolute;
+    top: -35px;
+    right: 0;
 }
 
 .about {
     width: 320px;
+    height: 150px;
+    margin: auto;
 }
 
 .about__title {
