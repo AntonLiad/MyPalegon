@@ -88,10 +88,12 @@
     border-bottom: 1px solid rgba(0, 0, 0, .2);
 }
 
-.popup__span {
-    display: block;
-    width: 280px;
-    height: 30px;
+.popup__input:valid {
+    border-bottom: 1px solid green;
+}
+
+.popup__input:invalid {
+    border-bottom: 1px solid red;
 }
 
 .popup__button {
@@ -105,12 +107,21 @@
     cursor: pointer;
 }
 
+.popup__button-disabled {
+    background-color: #fff;
+    border: 1px solid black;
+    color: black;
+}
+
 .popup__button-close {
-    background-color: rgba(0, 0, 0, 0);
+    background: url(../images/Close.png);
+    background-size: cover;
     border: none;
+    width: 19px;
+    height: 19px;
     position: absolute;
     top: 170px;
-    right: 10px;
+    right: 15px;
     cursor: pointer;
 }
 
@@ -126,6 +137,50 @@
 
 .about__job {
     font-family: 'Inter', Arial, sans-serif;
-    font-size: 18px; 
+    font-size: 18px;
     padding-left: 10px;
 }
+
+.form__input-error {
+    display: block;
+    width: 280px;
+    height: 30px;
+    opacity: 0;
+}
+
+.btn {
+    margin: 20px auto;
+    width: 250px;
+}
+
+.form-test {
+    width: 280px;
+    margin: 20px auto;
+}
+
+.form__input {
+    width: 280px;
+    height: 15px;
+    margin: 5px auto 0;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.form__input_error {
+    border: 2px solid red;
+}
+
+
+.form__input-error-active {
+    opacity: 1;
+    color: red;
+    font-size: 14px;
+}
+
+/* .form__input:valid {
+    border-bottom: 1px solid green;
+}
+
+.form__input:invalid {
+    border-bottom: 1px solid red;
+} */
