@@ -8,7 +8,7 @@
     <title>MyPolegon</title>
     <link rel="stylesheet" href="pages/index.css">
     <script src="scripts/add.js" defer></script>
-    <script src="scripts/test.js" defer></script>
+    <script src="scripts/validate.js" defer></script>
 </head>
 
 <body class="body">
@@ -23,6 +23,7 @@
                 <div class="menu-popup-div menu-popup__name">😍</div>
                 <div class="menu-popup-div menu-popup__foto">👀️</div>
             </section>
+
         </main>
         <section class="popup popuo_user">
             <div class="popup__block">
@@ -32,11 +33,11 @@
                         <h2 class="popup__title">Редактировать профиль</h2>
 
                         <input id="form-name" class="form__input popup__input-name" type="text" placeholder="Имя"
-                            minlength="2" maxlength="40" required value="">
+                            minlength="2" maxlength="40" required value="Anton">
                         <span class="form-name-error form__input-error"></span>
 
                         <input id="form-job" class="form__input popup__input-job" type="text" placeholder="Биогафия"
-                            minlength="2" maxlength="40" required value="">
+                            minlength="2" maxlength="40" required value="Программист">
                         <span class="form-job-error form__input-error"></span>
 
 
@@ -48,25 +49,58 @@
             </div>
 
         </section>
+
+        <section class="popup popuo-foto">
+            <div class="popup__block">
+                <div class="popup__box">
+
+                    <form action="#" class="form form-foto" novalidate>
+                        <h2 class="popup__title">Добавить фото</h2>
+
+                        <input id="form-name" class="form__input popup__input-name-img" type="text"
+                            placeholder="Название" minlength="2" maxlength="40" required value="">
+                        <span class="form-name-error form__input-error"></span>
+
+                        <input id="form-job" class="form__input popup__input-url" type="url"
+                            placeholder="Ссылка на картинку" minlength="2" maxlength="40" required value="">
+                        <span class="form-job-error form__input-error"></span>
+
+
+                        <button class="popup__button" type="submit">Сохранить</button>
+                        <button class="popup__button-close"></button>
+                    </form>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section class="popup popup__foto__img">
+            <div class="popup-foto__box">
+                <img src="" class="img__popup" alt="фото">
+                <h2 class="name__popup">Новое место</h2>
+                <button class="popup__button-close"></button>
+            </div>
+        </section>
+
         <section class="about">
             <h2 class="about__title">Anton</h2>
             <h2 class="about__job">Программист</h2>
     </div>
-    <!-- <form action="#" class="form form-test" novalidate>
-            <label class="form__lable">
-                Введите адрес электронной почты
-                <input id="form-input" type="email" class="form__input form__input-type-email" required>
-                <span class="form-input-error form__input-error"></span>
-            </label>
-            <button class="form__submit" type="submit">Войти</button>
-        </form>
-    </section>
 
-    <section class="btn">
-        <button data-num="1" class="btn">Click 1</button>
-        <button data-num="2" class="btn">Click 2</button>
-        <button data-num="3" class="btn">Click 3</button>
-    </section> -->
+    <ul class="glaoerea-photo">
+        <!-- сюда все вкладываем -->
+    </ul>
+
+
+    <template id="template">
+        <div class="popup__foto">
+            <img alt="Фото" class="popup__imag">
+            <h2 class="popup__title-name"></h2>
+        </div>
+        <button class="popup__button-close"></button>
+    </template>
+
 </body>
 
 </html>

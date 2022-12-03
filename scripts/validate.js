@@ -1,7 +1,3 @@
-// const form = document.querySelector('.form');
-// const formInput = form.querySelector('.form__input');
-// console.log(formInput.id); это больше не нужно... 
-
 // включить проверку
 const enableValidation = () => {
     // Найдём все формы с указанным классом в DOM,
@@ -61,10 +57,6 @@ const isValid = (formElement, inputElement) => {
         hideInputError(formElement, inputElement);
     }
 }
-
-// form.addEventListener('submit', function (e) {
-//     e.preventDefault();
-// })
 
 // Функция принимает массив полей 
 const hasValidInput = (inputList) => {

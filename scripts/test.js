@@ -64,4 +64,4 @@ function isValidBtn(inputList) {
     })
 }
 
-enableValidationOne()
+enableValidationOne();
