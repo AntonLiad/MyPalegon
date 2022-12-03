@@ -1,19 +1,3 @@
-const buttonOpenPopupUser = document.querySelector('.menu-popup__name');
-const popupUser = document.querySelector('.popuo_user');
-const popupUserClose = popupUser.querySelector('.popup__button-close');
-const button = document.querySelector('.popup__button');
-
-const formUser = document.querySelector('.form-user');
-// передача от попап к форме 
-
-const titleName = document.querySelector('.about__title');
-const titleJob = document.querySelector('.about__job');
-
-const popupInputName = document.querySelector('.popup__input-name');
-const popupInputJob = document.querySelector('.popup__input-job');
-
-const popupSpan = document.querySelector('.popup__span');
-
 buttonOpenPopupUser.addEventListener('click', () => {
     openPopup(popupUser)
 });
@@ -68,17 +52,6 @@ inputs.forEach(input => {
     input.addEventListener('click', handleClick)
 })
 
-//1
-const glaoerea = document.querySelector('.glaoerea-photo');
-//2
-
-const buttonSevFoto = document.querySelector('.menu-popup__foto');
-
-const popupFotoSev = document.querySelector('.popuo-foto');
-const closePopupFotoSev = popupFotoSev.querySelector('.popup__button-close');
-const inputNameFoto = document.querySelector('.popup__input-name-img');
-const inputImgFoto = document.querySelector('.popup__input-url');
-
 buttonSevFoto.addEventListener('click', () => {
     openPopup(popupFotoSev);
 })
@@ -86,33 +59,6 @@ buttonSevFoto.addEventListener('click', () => {
 closePopupFotoSev.addEventListener('click', () =>
     buttonClose(popupFotoSev));
 
-
-const initialCards = [
-    {
-        name: 'Архыз',
-        link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg'
-    },
-    {
-        name: 'Челябинская область',
-        link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/chelyabinsk-oblast.jpg'
-    },
-    {
-        name: 'Иваново',
-        link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg'
-    },
-    {
-        name: 'Камчатка',
-        link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg'
-    },
-    {
-        name: 'Холмогорский район',
-        link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kholmogorsky-rayon.jpg'
-    },
-    {
-        name: 'Байкал',
-        link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg'
-    }
-];
 
 const template = document.querySelector('#template').content;
 template.querySelector('.popup__foto');
@@ -142,15 +88,6 @@ function generatCart(dataCard) {
 
     return newCard
 }
-
-const buttonPopupFoto = document.querySelector('.popup__imag');
-
-const popupFotot = document.querySelector('.popup__foto__img');
-const buttonClosePopupFoto = popupFotot?.querySelector('.popup__button-close');
-const submitPopupFoto = popupFotot?.querySelector('.popup__button');
-
-const addFoto = document.querySelector('.img__popup');
-const addTitle = document.querySelector('.name__popup');
 
 popupFotot.addEventListener('click', () => {
     buttonClose(popupFotot)
