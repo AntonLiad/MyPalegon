@@ -59,6 +59,9 @@ buttonSevFoto.addEventListener('click', () => {
 closePopupFotoSev.addEventListener('click', () =>
     buttonClose(popupFotoSev));
 
+buttonClosePopupFoto.addEventListener('click', () => {
+    buttonClose(popupFotot);
+})
 
 const template = document.querySelector('#template').content;
 template.querySelector('.popup__foto');
@@ -76,6 +79,8 @@ function generatCart(dataCard) {
 
     const title = newCard.querySelector('.popup__title-name');
     const img = newCard.querySelector('.popup__imag');
+    const like = newCard.querySelector('.popup__like');
+    like.addEventListener('click', (e) => e.target.classList.toggle('popup__like-active'))
 
     title.textContent = dataCard.name;
     img.src = dataCard.link;
@@ -89,16 +94,12 @@ function generatCart(dataCard) {
     return newCard
 }
 
-popupFotot.addEventListener('click', () => {
-    buttonClose(popupFotot)
-})
-
-popupFotoSev.addEventListener('submit', handleProfileFormSubmit);
-
-function handleProfileFormSubmit(e) {
-    e.preventDefault();
-    renderCard({ link: inputImgFoto.value, name: inputNameFoto.value })
-    inputImgFoto.value = '';
-    inputNameFoto.value = '';
+const handleAddFormSubmit = (event) => {
+    event.preventDefault();
+    renderCard({ link: popupImg.value, name: popupTitle.value });
+    popupImg.value = '';
+    popupTitle.value = '';
     buttonClose(popupFotoSev);
 }
+
+popupFotoSev.addEventListener('submit', handleAddFormSubmit);

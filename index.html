@@ -7,9 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyPolegon</title>
     <link rel="stylesheet" href="pages/index.css">
+    <script src="scripts/conteiner.js" defer></script>
     <script src="scripts/add.js" defer></script>
     <script src="scripts/validate.js" defer></script>
-    <script src="scripts/conteiner.js" defer></script>
+    <script src="scripts/testTwo.js" defer></script>
 </head>
 
 <body class="body">
@@ -58,8 +59,8 @@
                     <form action="#" class="form form-foto" novalidate>
                         <h2 class="popup__title">Добавить фото</h2>
 
-                        <input id="form-name" class="form__input popup__input-name-img" type="text"
-                            placeholder="Название" minlength="2" maxlength="40" required value="">
+                        <input id="form-name" class="form__input popup__input-img" type="text" placeholder="Название"
+                            minlength="2" maxlength="40" required value="">
                         <span class="form-name-error form__input-error"></span>
 
                         <input id="form-job" class="form__input popup__input-url" type="url"
@@ -97,7 +98,10 @@
     <template id="template">
         <div class="popup__foto">
             <img alt="Фото" class="popup__imag">
-            <h2 class="popup__title-name"></h2>
+            <div class="popup__box">
+                <h2 class="popup__title-name"></h2>
+                <button class="popup__like"></button>
+            </div>
         </div>
         <button class="popup__button-close"></button>
     </template>

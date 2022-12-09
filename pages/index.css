@@ -101,7 +101,6 @@
 }
 
 .popup__button {
-    margin-top: 25px;
     width: 280px;
     height: 50px;
     border-radius: 10px;
@@ -209,6 +208,10 @@
     font-family: 'Inter', Arial, sans-serif;
     margin: 0;
     padding: 10px 0 0;
+    width: 150px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .popup-foto__box {
@@ -227,4 +230,24 @@
     font-size: 14px;
     margin: 5px 0 0;
     color: #fff
+}
+
+.popup__box {
+    width: 288px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.popup__like {
+    background: url(../images/heart.png);
+    width: 22px;
+    height: 19px;
+    background-size: cover;
+    border: none;
+    margin: 12px 5px 0 0;
+}
+
+.popup__like-active {
+    background: url(../images/like-activ.png);
 }

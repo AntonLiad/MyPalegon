@@ -20,8 +20,8 @@ const buttonSevFoto = document.querySelector('.menu-popup__foto');
 
 const popupFotoSev = document.querySelector('.popuo-foto');
 const closePopupFotoSev = popupFotoSev.querySelector('.popup__button-close');
-const inputNameFoto = document.querySelector('.popup__input-name-img');
-const inputImgFoto = document.querySelector('.popup__input-url');
+const popupTitle = document.querySelector('.popup__input-img');
+const popupImg = document.querySelector('.popup__input-url');
 
 
 const buttonPopupFoto = document.querySelector('.popup__imag');

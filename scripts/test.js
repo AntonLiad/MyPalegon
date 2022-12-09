@@ -65,3 +65,10 @@ function isValidBtn(inputList) {
 }
 
 enableValidationOne();
+
+const name = () => {
+    console.log('Anton');
+
+}
+
+export default name
